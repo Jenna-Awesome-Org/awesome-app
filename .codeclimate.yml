@@ -2,4 +2,5 @@ engines:
   rubocop:
     enabled: true
 exclude_paths:
-- "spec/"
+- "**/**"
+- "!spec/"
