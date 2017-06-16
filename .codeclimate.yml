@@ -10,8 +10,7 @@ engines:
   fixme:
     enabled: true
 exclude_paths:
-- "**/**"
-- "!spec/"
+- "spec/"
 ratings:
   paths:
   - "**.json"
