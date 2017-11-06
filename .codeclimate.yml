@@ -7,9 +7,6 @@ engines:
       extensions:
       - .json
       - .js
-    exclude_paths:
-    - "**/*"
-    - "!keys.json"
   fixme:
     enabled: true
 exclude_paths:
