@@ -20,21 +20,3 @@ checks:
     enabled: false
   identical-code:
     enabled: false
-
-engines:
-  rubocop:
-    enabled: true
-  eslint:
-    enabled: true
-    config:
-      extensions:
-      - .json
-      - .js
-  fixme:
-    enabled: true
-
-exclude_paths:
-- ".*"
-ratings:
-  paths:
-  - "**.json"
