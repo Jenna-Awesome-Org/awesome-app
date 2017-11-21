@@ -1,0 +1,45 @@
+
+version: "2"         # required to adjust maintainability checks
+checks:
+  argument-count:
+    config:
+      threshold: 5
+  complex-logic:
+    config:
+      threshold: 10
+  file-lines:
+    config:
+      threshold: 1000
+  method-complexity:
+    config:
+      threshold: 12
+  method-count:
+    enabled: false
+  method-lines:
+    config:
+      threshold: 100
+  nested-control-flow:
+    config:
+      threshold: 10
+  return-statements:
+    config:
+      threshold: 4
+  similar-code:
+    config:
+      threshold: # language-specific defaults. an override will affect all languages.
+  identical-code:
+    config:
+      threshold: # language-specific defaults. an override will affect all languages
+plugins:
+  brakeman:
+    enabled: true
+  rubocop:
+    enabled: true
+ratings:
+  paths:
+  - app/**/*
+  - lib/**/*
+  - "**.rb"
+  - "**.js"
+exclude_paths:
+- public/**/*
